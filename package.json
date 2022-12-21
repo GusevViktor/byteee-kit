@@ -1,8 +1,8 @@
 {
-  "name": "@byteee/ui-kit",
+  "name": "@viktor666/byteee-kit",
   "private": false,
   "author": "",
-  "version": "0.0.3",
+  "version": "0.0.1",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
