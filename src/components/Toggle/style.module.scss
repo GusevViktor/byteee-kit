@@ -1,0 +1,95 @@
+@use 'src/styles/color';
+.wrap {
+    display: inline-block;
+}
+
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 32px;
+    height: 20px;
+}
+
+.toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: color.$grayscale200;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+.slider:hover{
+    background: color.$grayscale300;
+}
+.slider:active{
+    background: color.$grayscale400;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height:16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+.toggle input:checked + .slider:before {
+    transform: translateX(12px);
+}
+.toggle.green  input:checked + .slider{
+    background: color.$mint600;
+}
+.toggle:hover.green  input:checked + .slider{
+    background: color.$mint800;
+}
+.toggle:active.green  input:checked + .slider{
+    background: color.$mint900;
+}
+.toggle.orange  input:checked + .slider{
+    background: color.$brand600;
+}
+.toggle:hover.orange  input:checked + .slider{
+    background: color.$brand800;
+}
+.toggle:active.orange  input:checked + .slider{
+    background: color.$brand900;
+}
+.toggle.blue input:checked + .slider {
+    background: color.$blue600;
+}
+.toggle:hover.blue input:checked + .slider {
+    background: color.$blue800;
+}
+.toggle:active.blue input:checked + .slider {
+    background: color.$blue900;
+}
+.toggle.violet input:checked + .slider {
+    background: color.$violet600;
+}
+.toggle:hover.violet input:checked + .slider {
+    background: color.$violet800;
+}
+.toggle:active.violet input:checked + .slider {
+    background: color.$violet900;
+}
+.toggle input:disabled + .slider {
+    background: color.$grayscale200;
+    pointer-events: none;
+}
+.toggle input:disabled + .slider:before{
+    background: color.$grayscale100;
+}
+
+

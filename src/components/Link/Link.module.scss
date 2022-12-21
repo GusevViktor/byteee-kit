@@ -1,0 +1,107 @@
+@use 'src/styles/color';
+/*
+A:link	Определяет стиль для обычной непосещенной ссылки.
+A:active	Определяет стиль для активной ссылки. Активной ссылка становится при нажатии на нее.
+&A:hover	Определяет стиль для ссылки при наведении на нее мышью. 
+*/
+.link {
+    position: relative;
+    width: max-content;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    border-bottom: 1px solid color.$grayscale200;
+    &:hover {
+      cursor: pointer;
+    }
+}
+
+.link_pl {
+  padding-left: 26px;
+}
+
+.link_pr {
+  padding-right: 26px;
+}
+
+.underline {
+    border-bottom: 1px solid color.$grayscale200;
+}
+
+.black {
+    color: color.$grayscale1000;
+    border-bottom: 1px solid color.$grayscale200;
+    &:hover {
+      border-bottom: 1px solid color.$grayscale400;
+    }
+}
+
+.blue {
+    color: color.$blue;
+    border-bottom: 1px solid color.$blue200;
+    color: color.$blue;
+    &:hover {
+      border-bottom: 1px solid color.$blue400;
+    }
+    span svg path {
+      stroke: color.$blue;
+    }
+}
+
+.violet {
+    color: color.$violet;
+    border-bottom: 1px solid color.$violet200;
+    &:hover {
+      border-bottom: 1px solid color.$violet400;
+    }
+    span svg path {
+      stroke: color.$violet;
+    }
+}
+
+.white {
+    color: color.$white;
+    border-bottom: 1px solid color.$grayscale200;
+    &:hover {
+      border-bottom: 1px solid color.$grayscale400;
+    }
+    span svg path {
+      stroke: color.$white;
+    }
+}
+
+.s {
+    font-size: 14px;
+}
+
+.m {
+    font-size: 16px;
+}
+
+.l {
+    font-size: 20px;
+}
+
+.icon {
+    position: absolute;
+    top: calc(50% - 8px);
+    width: 16px;
+    height: 16px;
+}
+
+.icon__left {
+  left: 0;
+}
+
+.icon__right {
+    right: 0;
+}
+
+.none_border {
+  border-bottom: 1px solid transparent;
+}
+
+.none_hover_border:hover {
+  border-bottom: 1px solid transparent;
+}

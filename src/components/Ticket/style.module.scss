@@ -1,0 +1,110 @@
+@use 'src/styles/color';
+@use 'src/styles/media';
+
+.wrap {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.topBlock {
+  background: color.$white;
+  padding: 20px 16px;
+  border-radius: 26px;
+  position: relative;
+  @include media.tp {
+    padding: 28px 20px;
+  }
+  @include media.d {
+    padding: 32px 24px;
+  }
+  @include media.dhd {
+    padding: 36px 24px;
+  }
+}
+
+.dateSection {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.organizerInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.topBlock.topBlockWithChild {
+  background: white;
+  background: linear-gradient(-45deg, transparent 12px, color.$white 0) right,
+  linear-gradient(45deg, transparent 12px, color.$white 0) left;
+  background-size: 51% 100%;
+  background-repeat: no-repeat;
+  border-radius: unset;
+  border-top: {
+    left-radius: 26px;
+    right-radius: 26px;
+  }
+}
+
+.mb {
+  margin-bottom: 12px;
+}
+.border {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: 5;
+}
+
+.border > div {
+  width: calc(100% - 32px);
+  height: 2px;
+  background-image: linear-gradient(90deg, color.$violet400, color.$violet400 50%, transparent 50%, transparent 50%);
+  background-size: 28px 100%;
+  border: none;
+}
+.component {
+  background: color.$white;
+  background:
+          linear-gradient(135deg, transparent 12px,
+                  color.$white 0)
+          top left,
+          linear-gradient(-135deg, transparent 12px,
+                  color.$white 0)
+          top right;
+  padding: 24px 16px;
+  background-size: 52% 100%;
+  background-repeat: no-repeat;
+  border-bottom:{
+    left-radius: 26px;
+    right-radius: 26px;
+  }
+  display: flex;
+  flex-direction: column;
+  gap:8px;
+  margin-top: -1px;
+  @include media.tp{
+    padding: 28px 20px;
+  }
+  @include media.d{
+    padding: 32px 24px;
+  }
+}
+.component button {
+  width: 100%;
+}

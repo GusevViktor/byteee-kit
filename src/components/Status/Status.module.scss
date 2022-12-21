@@ -1,0 +1,36 @@
+@use 'src/styles/color';
+
+
+.wrap {
+  display: inline-block;
+  padding: 0 10px;
+  border-radius: 4px;
+  margin:0;
+}
+
+
+.blue {
+  background-color: color.$blue100;
+  p {
+    color: color.$blue600;
+  }
+}
+.mint {
+  background-color: color.$mint100;
+  p {
+    color: color.$mint600;
+  }
+}
+.grayscale {
+  background-color: color.$grayscale100;
+  p {
+    color: color.$grayscale600;
+  }
+}
+
+.tangerine {
+  background-color: color.$tangerine100;
+  p {
+    color: color.$tangerine600;
+  }
+}

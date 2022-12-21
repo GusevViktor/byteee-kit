@@ -1,0 +1,17 @@
+@use 'src/styles/color';
+.wrap{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 50%;
+  background: color.$grayscale100;
+  width: 40px;
+  height: 40px;
+}
+.wrap:hover{
+  background: color.$violet200;
+}
+.disable{
+  pointer-events: none;
+}

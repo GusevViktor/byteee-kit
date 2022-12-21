@@ -1,0 +1,340 @@
+@use "src/styles/color";
+
+.button {
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background-color: transparent;
+    font-family: 'Inter', sans-serif;
+}
+
+button img {
+    margin: 0 8px 0 0;
+}
+
+.button:hover{
+  cursor: pointer;
+}
+
+.buttonXs {
+    padding: 6px 12px;
+    min-width: 68px;
+    height: 32px;
+    font-weight: 400;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.buttonS {
+    padding: 8px 16px;
+    min-width: 83px;
+    height: 40px;
+    font-weight: 400;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.buttonM {
+    padding: 12px 24px;
+    min-width: 99px;
+    height: 48px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.buttonL {
+    padding: 16px 32px;
+    min-width: 115px;
+    height: 56px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.buttonXl {
+    padding: 20px 40px;
+    min-width: 131px;
+    height: 64px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.solid {
+    background: color.$violet;
+    color: white;
+}
+
+.outline {
+    border: 1px solid  color.$violet;
+    color:  color.$violet;
+}
+
+.flat {
+    color:  color.$violet;
+}
+
+.solid.red {
+    background-color: color.$red;
+    color: white;
+}
+
+.solid.red:hover {
+    background-color: color.$red700;
+    cursor: pointer;
+}
+
+.solid.red:active {
+    background-color: color.$red800;
+}
+
+.outline.red {
+    border-color: color.$red;
+    color: color.$red;
+}
+
+.outline.red:hover {
+    border: 1px solid color.$red300;
+    color: color.$red;
+    cursor: pointer;
+}
+
+.outline.red:active {
+    border: 1px solid color.$red200;
+    color: color.$red;
+}
+
+.flat.red {
+    color: color.$red;
+}
+
+.flat.red:hover {
+    color: color.$red800;
+    cursor: pointer;
+}
+
+.flat.red:active {
+    color: color.$red900;
+}
+
+.solid.violet {
+    background-color:  color.$violet;
+    color: white;
+}
+
+.solid.violet:hover {
+    background-color: color.$violet700;
+    cursor: pointer;
+}
+
+.solid.violet:active {
+    background-color: color.$violet800;
+}
+
+.outline.violet {
+    border: 1px solid  color.$violet;
+    color:  color.$violet;
+}
+
+.outline.violet:hover {
+    border: 1px solid color.$violet300;
+    color:  color.$violet;
+}
+
+.outline.violet:active {
+    border: 1px solid color.$violet200;
+    color: color.$violet800;
+}
+
+.flat.violet {
+    background: none;
+    color:  color.$violet;
+}
+
+.flat.violet:hover {
+    color: color.$violet800;
+    cursor: pointer;
+}
+
+.flat.violet:active {
+    color: color.$violet900;
+}
+
+.solid.yellow {
+    background-color: color.$yellow;
+    color: color.$grayscale1000;
+}
+
+.solid.yellow:hover {
+    background-color: color.$yellow700;
+    cursor: pointer;
+}
+
+.solid.yellow:active {
+    background-color: color.$yellow800;
+}
+
+.outline.black {
+    border: 1px solid color.$grayscale1000;
+    color: color.$grayscale1000;
+}
+
+.outline.black:hover {
+    border: 1px solid color.$grayscale300;
+}
+
+.outline.black:active {
+    border: 1px solid color.$grayscale200;
+}
+
+.flat.black {
+    color: color.$grayscale900;
+}
+
+.flat.black:hover {
+    color: color.$grayscale600;
+    cursor: pointer;
+}
+
+.flat.black:active {
+    color: color.$grayscale400;
+}
+
+.solid.white {
+    background-color: color.$white;
+    color: color.$grayscale1000;
+}
+
+.solid.white:hover {
+    background-color: color.$grayscale100;
+    cursor: pointer;
+}
+
+.solid.white:active {
+    background-color: color.$grayscale200;
+}
+
+.outline.white {
+    border: 1px solid color.$white;
+    color: color.$white;
+}
+
+.outline.white:hover {
+    border: 1px solid color.$grayscale300;
+    cursor: pointer;
+}
+
+.outline.white:active {
+    border: 1px solid color.$grayscale200;
+}
+
+.flat.white {
+    color: color.$white;
+    background-color: transparent;
+}
+
+.flat.white:hover {
+    color: color.$white;
+    background-color: color.$grayscale800;
+    cursor: pointer;
+}
+
+.flat.white:active {
+    background-color: transparent;
+    color: color.$grayscale900;
+}
+
+
+.solid.mint {
+    background-color: color.$mint;
+    color: color.$white;
+}
+
+.solid.mint:hover {
+    background-color: color.$mint700;
+    cursor: pointer;
+}
+
+.solid.mint:active {
+    background-color: color.$mint800;
+}
+
+.outline.mint {
+    border: 1px solid color.$mint;
+    color: color.$mint;
+}
+
+.outline.mint:hover {
+    border: 1px solid color.$mint300;
+    cursor: pointer;
+}
+
+.outline.mint:active {
+    border: 1px solid color.$mint200;
+}
+
+.flat.mint {
+    color: color.$mint;
+}
+
+.flat.mint:hover {
+    color: color.$mint800;
+    cursor: pointer;
+}
+
+.flat.mint:active {
+    color: color.$mint900;
+}
+
+.solid:disabled {
+    background: color.$grayscale200;
+    color: color.$grayscale500;
+    pointer-events: none;
+}
+
+.outline:disabled {
+    background: color.$white;
+    color: color.$grayscale500;
+    border: none;
+    pointer-events: none;
+}
+
+.flat:disabled {
+    color: color.$grayscale500;
+    pointer-events: none;
+}
+
+.flat.white:disabled {
+    color: color.$grayscale500;
+    background: color.$grayscale900;
+    pointer-events: none;
+}
+
+.flat.black:disabled {
+    color: color.$grayscale300;
+    pointer-events: none;
+}
+
+.icon_left {
+  display: flex;
+  align-items: center;
+  margin-right: 9px;
+}
+
+.icon_right {
+  display: flex;
+  align-items: center;
+  margin-left: 9px;
+}
+
+.no_margin {
+  margin: 0;
+}

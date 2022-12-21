@@ -1,0 +1,70 @@
+@use 'src/styles/color';
+
+
+.wrap textarea {
+  resize: none;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 12px;
+  outline: none;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 16px;
+  border-color: color.$grayscale300;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+}
+
+.wrap textarea:focus {
+  border-color: color.$violet300;
+}
+.wrap textarea:focus-within {
+  border-color: color.$violet300;
+}
+
+.wrap textarea:hover {
+  border: 1px solid color.$violet400;
+}
+
+.wrap textarea::-webkit-scrollbar {
+  width: 0;
+}
+
+.wrap textarea::placeholder {
+  color: color.$grayscale500;
+}
+
+.wrap textarea:focus::placeholder {
+  color: color.$grayscale400;
+}
+
+.wrap textarea.error {
+  border: 1px solid color.$red;
+}
+
+.textError {
+  color: color.$red;
+  font-family: 'Inter', sans-serif;
+  word-wrap: break-word;
+  max-width: 279px;
+  font-size: 13px;
+  line-height: 19px;
+  margin-top: 8px;
+}
+
+.wrap .filled {
+  border: 1px solid color.$grayscale600;
+  color: color.$grayscale1000;
+}
+
+.label {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+}

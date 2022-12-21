@@ -1,0 +1,40 @@
+@use 'src/styles/color';
+
+.menuList {
+ display: flex;
+ flex-direction: column; 
+ padding:0;
+ margin:0;
+ list-style-type: none;
+}
+.head *{
+  padding:0;
+  margin:0;
+  color: color.$violet;
+}
+.head:hover * {
+  color: color.$violet800;
+}
+.head:active * {
+  color: color.$violet1000;
+}
+
+.m {
+  font-size: 16px;
+}
+.l {
+  font-size: 20px;
+}
+
+.head{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start
+}
+.head p {
+  margin-right: 8px;
+}
+.icon_rotate{
+  transform: rotate(90deg);
+}

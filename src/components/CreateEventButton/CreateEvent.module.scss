@@ -1,0 +1,35 @@
+@use "src/styles/media";
+@use "src/styles/color";
+.wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid color.$violet300;
+    border-radius: 20px;
+    padding: 25px 0;
+    gap: 14px;
+    cursor: pointer;
+}
+.wrap:hover{
+    border: 2px solid color.$violet600;
+}
+.wrap:hover svg path:nth-child(1n){
+    fill: color.$violet600;
+}
+.wrap:active{
+    border: 2px solid color.$violet600;
+}
+.wrap:active svg path:nth-child(1n){
+    fill: color.$violet300;
+}
+.wrap:active span{
+    color: color.$violet300;
+}
+.disabled{
+    border: none;
+    pointer-events: none;
+    background: color.$grayscale100;
+}
+.disabled svg path:nth-child(1n){
+    fill: color.$grayscale200;
+}

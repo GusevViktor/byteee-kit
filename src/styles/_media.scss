@@ -1,0 +1,111 @@
+$MobilePortrait: 320px;
+
+$MobileLandscape: 480px;
+
+$TabletPortrait: 768px;
+
+$TabletLandscape: 1024px;
+
+$Desktop: 1280px;
+
+$DesktopS: 1440px;
+
+$DesktopHD: 1920px;
+
+
+@mixin mp {
+  @media screen and (min-width: $MobilePortrait) { 
+    @content 
+  }
+};
+
+@mixin ml {
+  @media screen and (min-width: $MobileLandscape) { 
+    @content 
+  }
+};
+
+
+@mixin tp {
+  @media screen and (min-width: $TabletPortrait) {
+    @content 
+  }
+};
+
+@mixin tl {
+  @media screen and (min-width: $TabletLandscape) {
+    @content 
+  }
+};
+
+@mixin d {
+  @media screen and (min-width: $Desktop) {
+    @content 
+  }
+};
+
+@mixin ds {
+  @media screen and (min-width: $Desktop) {
+    @content 
+  }
+};
+
+@mixin dhd {
+  @media screen and (min-width: $DesktopHD) {
+    @content 
+  }
+};
+//old breakpoints
+
+$MobilePortraitOld: 320px; // old 320px
+
+$MobileLandscapeOld: 568px; // old 768px
+
+$TabletPortraitOld: 768px; // old 768px
+
+$TabletLandscapeOld: 1024px;
+
+$DesktopOld: 1440px;
+
+$DesktopHdOld: 1920px;
+
+@mixin mp_old {
+  @media screen and (min-width: $MobilePortraitOld) {
+    @content
+  }
+};
+
+@mixin ml_old {
+  @media screen and (min-width: $MobileLandscapeOld) {
+    @content
+  }
+};
+@mixin ml_old {
+  @media screen and (min-width: $MobileLandscapeOld) {
+    @content
+  }
+};
+
+@mixin tp_old {
+  @media screen and (min-width: $TabletPortraitOld) {
+    @content
+  }
+};
+
+@mixin tl_old {
+  @media screen and (min-width: $TabletLandscapeOld) {
+    @content
+  }
+};
+
+@mixin d_old {
+  @media screen and (min-width: $DesktopOld) {
+    @content
+  }
+};
+
+@mixin dhd_old {
+  @media screen and (min-width: $DesktopHdOld) {
+    @content
+  }
+};

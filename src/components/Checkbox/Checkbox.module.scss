@@ -1,0 +1,155 @@
+@use 'src/styles/color';
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.wrap {
+  display: inline-flex;
+  cursor: pointer;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: nowrap;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.heightS{
+  min-height: 16px;
+}
+.heightM{
+  min-height: 20px;
+}
+
+.left {
+  flex-direction: row-reverse;
+}
+
+.s {
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+}
+.s.checkbox svg{
+  width: 10px;
+  height: 7px;
+}
+.m.checkbox svg{
+  width: 12px;
+  height: 9px;
+}
+.s.checkbox{
+  margin-top: 4px;
+}
+.m.checkbox{
+  margin-top: 2px;
+}
+
+.m {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+}
+
+.visually_hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.checkbox {
+  border-radius: 4px;
+  border: 1px solid color.$grayscale400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: start;
+  transition: .2s;
+}
+
+.checkbox svg {
+  opacity: 0;
+  transition: .2s;
+}
+
+.wrap input:checked + .checkbox {
+  background: color.$violet600;
+  border: 1px solid color.$violet200;
+  border-radius: 4px;
+  animation: draw-checkbox ease-in-out 0.2s forwards;
+}
+
+.wrap input:checked + .error {
+  border: 1px solid color.$red600;
+}
+
+.wrap input:checked + .checkbox:hover {
+  border: 1px solid color.$violet100;
+}
+
+.wrap input:hover + .error {
+  border: 1px solid color.$red600;
+}
+.wrap input:hover + .error:hover {
+  border: 1px solid color.$red600;
+}
+.wrap input:hover:checked + .error:hover {
+  border: 1px solid color.$red600;
+}
+
+.wrap input:hover + .checkbox {
+  border: 1px solid color.$grayscale800;
+}
+.wrap input:hover:checked + .checkbox {
+  border: 1px solid color.$violet100;
+}
+
+.wrap input:disabled + .checkbox {
+  background: color.$grayscale100;
+  border: 1px solid color.$grayscale200;
+  border-radius: 4px;
+}
+.wrap input:hover:disabled + .checkbox {
+  border: 1px solid color.$grayscale200;
+}
+
+.wrap input:checked + .checkbox svg {
+  opacity: 1;
+}
+
+.error {
+  border: 1px solid color.$red600;
+}
+
+
+@keyframes draw-checkbox {
+  0% {
+    stroke-dashoffset: 33;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}

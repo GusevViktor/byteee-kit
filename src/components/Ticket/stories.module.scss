@@ -1,0 +1,25 @@
+@use 'src/styles/media';
+@use 'src/styles/color';
+
+.wrap {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: gray;
+  padding: 50px;
+}
+.widthTicket{
+  width: 100%;
+  max-width: 280px;
+  @include media.tp{
+    max-width: 232px;
+  }
+  @include media.d{
+    max-width: 224px;
+  }
+  @include media.dhd{
+    max-width: 304px;
+  }
+}

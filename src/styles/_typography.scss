@@ -1,0 +1,74 @@
+@use 'src/styles/color';
+
+@mixin font() {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: color.$grayscale900;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin heading_1() {
+  @include font;
+  font-size: 61px;
+  line-height: 76px;
+}
+
+@mixin heading_2() {
+  @include font;
+  font-size: 49px;
+  line-height: 62px;
+}
+
+@mixin heading_3() {
+  @include font;
+  font-size: 39px;
+  line-height: 52px;
+}
+@mixin heading_4() {
+  @include font;
+  font-size: 31px;
+  line-height: 42px;
+}
+@mixin heading_5() {
+  @include font;
+  font-size: 25px;
+  line-height: 35px;
+}
+
+@mixin heading_6() {
+  @include font;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+@mixin paragraph_xs() {
+  @include font;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+@mixin paragraph_s() {
+  @include font;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@mixin paragraph_m() {
+  @include font;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@mixin paragraph_l() {
+  @include font;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+@mixin paragraph_xl() {
+  @include font;
+  font-size: 28px;
+  line-height: 42px;
+}

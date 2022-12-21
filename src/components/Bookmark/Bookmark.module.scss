@@ -1,0 +1,17 @@
+
+.wrap{
+  border-radius: 50%;
+  background: rgba(15,15,15, .2);
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.wrap:hover{
+  background: rgba(15,15,15, .4);
+}
+.wrap:active{
+  background: rgba(15,15,15, .6);
+}

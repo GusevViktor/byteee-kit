@@ -1,0 +1,22 @@
+@use 'src/styles/color';
+
+.wrap {
+    display:inline-flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+p {
+    margin:0;
+    padding:0;
+    font: {
+        family: "Inter";
+        weight: 400;
+        size: 13px;
+    };
+    line-height: 19px;
+    color: color.$grayscale600;
+}
+.icon {
+    padding-right: 8px;
+}

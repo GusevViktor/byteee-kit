@@ -1,0 +1,143 @@
+@use 'src/styles/color';
+
+.wrapAll .toolbar {
+  padding: 16px;
+  border-top: {
+    left-radius: 12px;
+    right-radius: 12px;
+  }
+  border: none;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  margin: 0;
+  border-bottom: 1px solid color.$grayscale300;
+}
+
+.wrapAll .option {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  padding: 16px;
+}
+
+.editor {
+  border: 1px solid color.$grayscale300;
+  border-radius: 12px;
+  background: white;
+  margin: 0;
+  min-height: 197px;
+}
+
+.editor:hover {
+  border: 1px solid color.$violet400;
+}
+
+.editor:hover.filled {
+  border: 1px solid color.$violet400;
+}
+
+.editor.filled {
+  border: 1px solid color.$grayscale600;
+}
+
+.toolbar.filled {
+  border-bottom: 1px solid color.$grayscale600;
+}
+
+.editor:hover .toolbar {
+  border-bottom: 1px solid color.$violet400;
+}
+
+.editor:focus-within {
+  border: 1px solid color.$violet300;
+}
+
+.editor:focus-within .toolbar {
+  border-bottom: 1px solid color.$violet300;
+}
+
+
+.editor {
+  & div {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: color.$grayscale500;
+    white-space: normal;
+    letter-spacing: -0.1px;
+  }
+}
+
+.editor span {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: color.$grayscale1000;
+}
+
+.option svg path:active {
+  stroke: color.$violet700;
+}
+
+.option:active {
+  box-shadow: none;
+}
+
+:global .option .rdw-option-active {
+  box-shadow: none !important;
+}
+
+.option svg path {
+  stroke: #1B63FF !important;
+}
+
+:global .rdw-option-hover {
+  box-shadow: none;
+}
+
+.svg:hover svg path {
+  stroke: color.$violet500;
+}
+
+.svg:active svg path {
+  stroke: color.$violet800;
+}
+
+.wrapAll ul {
+  margin: 0;
+}
+
+.wrapAll li::marker {
+  color: color.$grayscale1000;
+}
+
+.hidePlaceholder :global .public-DraftEditorPlaceholder-root {
+  display: none;
+}
+
+.wrapAll :global .rdw-editor-main {
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.wrapAll :global .rdw-editor-main::-webkit-scrollbar {
+  display: none;
+}
+
+.svg {
+  cursor: pointer;
+}
+
+.wrapAll :global .rdw-editor-wrapper {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}

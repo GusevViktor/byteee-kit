@@ -1,0 +1,13 @@
+@use 'src/styles/media';
+
+@mixin wrap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 8px;
+  @include media.ml() {
+    grid-template-columns: repeat(6, 1fr);
+  };
+  @include media.d() {
+    grid-template-columns: repeat(12, 1fr);
+  };
+};

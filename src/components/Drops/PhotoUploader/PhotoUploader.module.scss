@@ -1,0 +1,60 @@
+@use '../../../styles/color';
+@use '../../../styles/media';
+
+.wrap input[type="file"] {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.wrap{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.input{
+  border-radius:50% ;
+  background: color.$grayscale100;
+  border: 1px dashed color.$grayscale300;
+  font-size: 1.25em;
+  font-weight: 700;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 152px;
+  height: 152px;
+  cursor: pointer;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 8px;
+}
+.borderNone{
+  border: none;
+}
+
+.img {
+  width: 152px;
+  height: 152px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+img[src*="hidden"] {
+  display: none;
+}
+.edit {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  bottom: 0;
+}
+.readonly {
+  pointer-events: none;
+}
